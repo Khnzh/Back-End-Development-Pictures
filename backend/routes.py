@@ -85,20 +85,8 @@ def count():
 ######################################################################
 
 @app.route("/picture", methods=["GET"])
-
 def get_pictures():
-
-    if data:
-
-        for i, x in enumerate(data):
-
-            songs[f'song{i}']=x
-
-        return songs, 200
-
-   
-
-    return {"message": "Internal server error"}, 500
+    return data
 
 
 
